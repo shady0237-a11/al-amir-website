@@ -1,107 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AL AMIR PACK | الأمير باك</title>
-<meta name="description" content="الأمير باك لصناعة الورق والكرتون — Paper Cores, Edge Protectors and Packaging Solutions">
-<style>
-:root{--navy:#062c5b;--blue:#0878c9;--gold:#f3c33f;--bg:#f5f8fc;--text:#17324d}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Tahoma,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
-header{background:linear-gradient(135deg,#031d40,#0b65a8);color:#fff;padding:22px 5% 28px;position:sticky;top:0;z-index:10;box-shadow:0 3px 15px #0003}
-.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-size:28px;font-weight:800;letter-spacing:.5px}.logo span{color:var(--gold)}
-nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:700;font-size:14px}
-.hero{max-width:1150px;margin:25px auto;padding:0 18px}.hero img{width:100%;border-radius:18px;display:block;box-shadow:0 8px 28px #1234}
-.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:22px 0}
-.btn{display:inline-block;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:800}
-.primary{background:var(--gold);color:#10243d}.secondary{background:#fff;color:var(--navy);border:2px solid #d9e6f4}
-section{max-width:1150px;margin:0 auto;padding:35px 18px}
-h2{text-align:center;color:var(--navy);font-size:30px;margin:0 0 24px}.sub{text-align:center;margin-top:-15px;color:#61778e}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 5px 20px #17324d12;border-top:5px solid var(--blue)}
-.card h3{margin:0 0 7px;color:var(--navy)}.card p{margin:0;color:#536b80}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}.gallery img{width:100%;border-radius:16px;box-shadow:0 5px 20px #17324d18}
-.spec{background:linear-gradient(135deg,#062c5b,#0a74b9);color:#fff;border-radius:18px;padding:25px}
-.specgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.specbox{background:#ffffff15;border:1px solid #ffffff35;border-radius:12px;padding:16px;text-align:center}.specbox strong{display:block;font-size:25px;color:var(--gold)}
-.contact{background:#fff;border-radius:18px;padding:25px;box-shadow:0 5px 20px #17324d12;text-align:center}
-footer{background:#031d40;color:#fff;text-align:center;padding:28px 18px;margin-top:20px}.small{opacity:.8;font-size:13px}
-@media(max-width:800px){.cards,.specgrid,.gallery{grid-template-columns:1fr}.nav{flex-direction:column}.nav nav{display:flex;flex-wrap:wrap;justify-content:center}.hero{margin-top:15px}h2{font-size:25px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأمير باك | تصنيع القلوب والمواسير الكرتونية الصناعية</title>
+    <meta name="description" content="شركة الأمير باك لتصنيع المواسير والقلوب الكرتونية بأعلى معايير الجودة ودقة المقاسات لمصانع التغليف والنسيج والبلاستيك في مصر.">
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+        body { font-family: 'Tajawal', sans-serif; }
+    </style>
 </head>
-<body>
-<header>
-  <div class="nav">
-    <div class="logo">A <span>ALAMIRPACK</span></div>
-    <nav>
-      <a href="#products">منتجاتنا</a>
-      <a href="#process">التصنيع</a>
-      <a href="#quality">الجودة</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
-  </div>
-</header>
+<body class="bg-gray-50 text-gray-800">
 
-<main>
-  <div class="hero">
-    <img src="products.jpg" alt="منتجات الأمير باك وحلول التصدير">
-    <div class="cta">
-      <a class="btn primary" href="https://wa.me/201152818005" target="_blank">تواصل واتساب</a>
-      <a class="btn secondary" href="mailto:alamirpack.sales1@gmail.com">إرسال بريد إلكتروني</a>
-    </div>
-  </div>
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <span class="text-2xl font-black text-amber-500">الأمير باك</span>
+                <span class="text-xs bg-slate-800 border border-slate-700 text-gray-300 px-2 py-1 rounded">AL-AMIR PACK</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 space-x-reverse font-bold text-sm">
+                <a href="#about" class="hover:text-amber-400 transition">من نحن</a>
+                <a href="#products" class="hover:text-amber-400 transition">المنتجات والصناعات</a>
+                <a href="#calculator" class="hover:text-amber-400 transition">حاسبة المواصفات</a>
+                <a href="#contact" class="hover:text-amber-400 transition">طلب عرض سعر</a>
+            </nav>
+            <a href="https://wa.me/201224313333" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+                <i class="fab font-bold fa-whatsapp"></i> تواصل سريع
+            </a>
+        </div>
+    </header>
 
-  <section id="products">
-    <h2>منتجاتنا</h2>
-    <p class="sub">حلول ورقية وكرتونية مصممة حسب احتياجات العميل</p>
-    <div class="cards">
-      <div class="card"><h3>مواسير كرتون</h3><p>Paper Cores بأحجام ومواصفات متعددة للاستخدامات الصناعية.</p></div>
-      <div class="card"><h3>زوايا كرتون</h3><p>Edge Protectors لحماية المنتجات أثناء النقل والتخزين.</p></div>
-      <div class="card"><h3>رولات الورق</h3><p>خامات ورق عالية الجودة للاستخدام الصناعي والتغليف.</p></div>
-      <div class="card"><h3>تغليف وتجهيز للتصدير</h3><p>تجهيز آمن ومنظم للحفاظ على جودة المنتجات أثناء الشحن.</p></div>
-      <div class="card"><h3>تصنيع حسب الطلب</h3><p>مرونة في المقاسات والمواصفات وفق طلب العميل.</p></div>
-      <div class="card"><h3>شحن موثوق</h3><p>حلول مناسبة للتوريد والأسواق المحلية والتصدير.</p></div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="bg-slate-900 text-white py-20 px-4 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-bold inline-block mb-4">الدقة والأمان لخطوط إنتاجك</span>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">حلول تصنيع القلوب والمواسير الكرتونية عالية الضغط</h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-8">نصنع القلوب الكرتونية للمصانع والشركات بأعلى معايير المقاومة وثبات الرطوبة والقطر الدقيق لضمان استمرار عمل خطوط إنتاجك بدون توقف.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg text-lg transition shadow-lg">احسب مواصفات منتجك</a>
+                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-6 py-3 rounded-lg text-lg transition">طلب عينة مجانية للمصنع</a>
+            </div>
+        </div>
+    </section>
 
-  <section id="process">
-    <h2>من خامة الورق إلى المنتج النهائي</h2>
-    <div class="gallery">
-      <img src="manufacturing.jpg" alt="مراحل تصنيع المواسير والزوايا الكرتونية">
-      <img src="products.jpg" alt="منتجات وحلول الأمير باك">
-    </div>
-  </section>
+    <!-- Interactive Specs Calculator -->
+    <section id="calculator" class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-10 shadow-sm">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">حاسبة المواصفات الفنية والقلوب الكرتونية</h2>
+                <p class="text-gray-600 text-sm">حدد الأبعاد المطلوبة لطلب المواصفة المناسبة لخط إنتاجك مباشرة</p>
+            </div>
+            
+            <form id="coreForm" onsubmit="generateSpec(event)" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">القطر الداخلي (mm)</label>
+                    <input type="number" id="innerDia" placeholder="مثال: 76 مم" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">سمك الجدار / الحائط (mm)</label>
+                    <input type="number" id="wallThick" placeholder="مثال: 10 مم" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">الطول الإجمالي (mm)</label>
+                    <input type="number" id="length" placeholder="مثال: 1000 مم" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">مجال الاستخدام / الصناعة</label>
+                    <select id="industry" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
+                        <option value="استرتش فيلم وبلاستيك">بلاستيك واسترتش فيلم</option>
+                        <option value="غزل ونسيج واقمشة">غزل ونسيج وأقمشة</option>
+                        <option value="ورق وطباعة وتغليف">ورق وطباعة ورول وتغليف</option>
+                        <option value="أشرطة لاصقة Tapes">أشرطة لاصقة وتطبيقات خاصة</option>
+                    </select>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold py-3 rounded-lg text-lg transition">تأكيد المواصفات وطلب تسعير</button>
+                </div>
+            </form>
 
-  <section id="quality">
-    <div class="spec">
-      <h2 style="color:#fff">المواصفات والجودة</h2>
-      <div class="specgrid">
-        <div class="specbox"><strong>150–1000</strong>جرام/م² وزن الورق</div>
-        <div class="specbox"><strong>10–600</strong>مم القطر الداخلي</div>
-        <div class="specbox"><strong>1–3000</strong>مم عدد/طول الطبقات حسب الطلب</div>
-      </div>
-      <p style="text-align:center;margin-bottom:0">نلتزم بمعايير الجودة والسلامة، مع إمكانية تعديل المقاسات حسب احتياج العميل.</p>
-    </div>
-  </section>
+            <div id="resultBox" class="hidden mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-center">
+                <p class="font-bold text-slate-900 mb-2" id="specSummary"></p>
+                <button onclick="sendToWhatsapp()" class="bg-green-600 text-white font-bold px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 mx-auto hover:bg-green-700">
+                    <i class="fab fa-whatsapp"></i> إرسال هذه المواصفة لإدارة المبيعات مباشرة
+                </button>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>لماذا الأمير باك؟</h2>
-    <div class="contact">
-      <p>جودة عالية • تصنيع حسب الطلب • تغليف احترافي • شحن موثوق • خبرة في التصدير</p>
-      <p><strong>مدينة السادات – المنطقة الصناعية – المنوفية – مصر</strong></p>
-      <p>📞01152818005&nbsp; | &nbsp; ✉️ alamirpack.sales1@gmail.com</p>
-      <div class="cta">
-        <a class="btn primary" href="https://wa.me/201152818005" target="_blank">اطلب عرض سعر</a>
-        <a class="btn secondary" href="mailto:alamirpack.sales1@gmail.com">راسلنا بالبريد</a>
-      </div>
-    </div>
-  </section>
-</main>
+    <!-- Products & Features Grid -->
+    <section id="products" class="py-16 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-black text-center text-slate-900 mb-12">لماذا نلبي احتياجات أكبر المصانع؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-microscope"></i></div>
+                    <h3 class="font-bold text-xl mb-2">ضبط نسبة الرطوبة (4-7%)</h3>
+                    <p class="text-gray-600 text-sm">نحافظ على نسبة رطوبة مثالية تمنع التواء المواسير أو تغير مقاساتها أثناء التخزين والتشغيل.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-ruler-combined"></i></div>
+                    <h3 class="font-bold text-xl mb-2">دقة أبعاد بالمليمتر</h3>
+                    <p class="text-gray-600 text-sm">التصنيع يتم وفق المقاس المحدد بالضبط متوافقاً مع السرعات العالية لخطوط إنتاجك.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-truck-loading"></i></div>
+                    <h3 class="font-bold text-xl mb-2">طاقة إنتاجية والتزام</h3>
+                    <p class="text-gray-600 text-sm">جاهزية توريد وتغطية للطلبات الكبيرة والإنتاج المستمر بدون أي تعطيل لمصنعك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  <div class="logo">ALAMIRPACK</div>
-  <div>الأمير باك لصناعة الورق والكرتون</div>
-  <div class="small">From Egypt To The World</div>
-</footer>
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-white py-10 px-4">
+        <div class="max-w-7xl mx-auto text-center border-t border-slate-800 pt-8">
+            <h3 class="text-2xl font-bold text-amber-500 mb-2">الأمير باك للقلوب الكرتونية</h3>
+            <p class="text-gray-400 text-sm mb-4">مدينة السادات - المنطقة الصناعية - مصر</p>
+            <p class="text-xs text-gray-500">جميع الحقوق محفوظة © 2026 - الأمير باك</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        let currentSpec = "";
+        function generateSpec(e) {
+            e.preventDefault();
+            const inner = document.getElementById('innerDia').value;
+            const wall = document.getElementById('wallThick').value;
+            const len = document.getElementById('length').value;
+            const ind = document.getElementById('industry').value;
+            
+            const outer = parseFloat(inner) + (parseFloat(wall) * 2);
+
+            currentSpec = طلب مواصفة مواسير كرتون:\n- القطر الداخلي: ${inner} مم\n- سمك الجدار: ${wall} مم (القطر الخارجي: ${outer} مم)\n- الطول: ${len} مم\n- الاستخدام: ${ind};
+            
+            document.getElementById('specSummary').innerText = المواصفة المطلوبة: قطر داخلي ${inner}مم | سمك ${wall}مم (خارجي ${outer}مم) | طول ${len}مم | مجال: ${ind};
+            document.getElementById('resultBox').classList.remove('hidden');
+        }
+
+        function sendToWhatsapp() {
+            const url = https://wa.me/201224313333?text=${encodeURIComponent(currentSpec)};
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
