@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
-        body { font-family: 'Tajawal', sans-serif; }
+        body { font-family: 'Tajawal', sans-serif; scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -19,39 +19,80 @@
     <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3 space-x-reverse">
-                <span class="text-2xl font-black text-amber-500">الأمير باك</span>
+                <a href="#" class="text-2xl font-black text-amber-500">الأمير باك</a>
                 <span class="text-xs bg-slate-800 border border-slate-700 text-gray-300 px-2 py-1 rounded">AL-AMIR PACK</span>
             </div>
             <nav class="hidden md:flex space-x-6 space-x-reverse font-bold text-sm">
                 <a href="#about" class="hover:text-amber-400 transition">من نحن</a>
                 <a href="#products" class="hover:text-amber-400 transition">المنتجات والصناعات</a>
                 <a href="#calculator" class="hover:text-amber-400 transition">حاسبة المواصفات</a>
-                <a href="#contact" class="hover:text-amber-400 transition">طلب عرض سعر</a>
+                <a href="#iso" class="hover:text-amber-400 transition">شهادات الجودة</a>
+                <a href="#contact" class="hover:text-amber-400 transition">تواصل معنا</a>
             </nav>
-            <a href="https://wa.me/201224313333" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
-                <i class="fab font-bold fa-whatsapp"></i> تواصل سريع
-            </a>
+            <div class="flex items-center gap-2">
+                <a href="tel:01152818005" class="bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 font-bold px-3 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+                    <i class="fas fa-phone"></i> <span class="hidden sm:inline">01152818005</span>
+                </a>
+                <a href="https://wa.me/201152818005" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+                    <i class="fab fa-whatsapp text-lg"></i> واتساب
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="bg-slate-900 text-white py-20 px-4 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-bold inline-block mb-4">الدقة والأمان لخطوط إنتاجك</span>
-            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">حلول تصنيع القلوب والمواسير الكرتونية عالية الضغط</h1>
-            <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-8">نصنع القلوب الكرتونية للمصانع والشركات بأعلى معايير المقاومة وثبات الرطوبة والقطر الدقيق لضمان استمرار عمل خطوط إنتاجك بدون توقف.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg text-lg transition shadow-lg">احسب مواصفات منتجك</a>
-                <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-6 py-3 rounded-lg text-lg transition">طلب عينة مجانية للمصنع</a>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-bold inline-block mb-4">الدقة والأمان لخطوط إنتاجك</span>
+                <h1 class="text-4xl md:text-5xl font-black leading-tight mb-6">حلول تصنيع القلوب والمواسير الكرتونية عالية الضغط</h1>
+                <p class="text-gray-300 text-lg mb-8">نصنع القلوب الكرتونية للمصانع والشركات بأعلى معايير المقاومة وثبات الرطوبة والقطر الدقيق لضمان استمرار عمل خطوط إنتاجك بدون توقف.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg text-lg transition shadow-lg">احسب مواصفات منتجك</a>
+                    <a href="tel:01152818005" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-6 py-3 rounded-lg text-lg transition flex items-center gap-2">
+                        <i class="fas fa-phone text-amber-500"></i> اتصال بالمبيعات
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="factory.jpg" alt="مصنع الأمير باك" class="rounded-2xl shadow-2xl border-4 border-slate-800 w-full h-80 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section (من نحن) -->
+    <section id="about" class="py-16 px-4 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-black text-slate-900 mb-6">من نحن - شركة الأمير باك</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    تعتبر شركة <strong>الأمير باك (AL-AMIR PACK)</strong> من الشركات المتخصصة والرائدة في تصنيع المواسير والقلوب الكرتونية الصناعية (Paper Cores) بمختلف المقاسات والمواصفات الفنية في مدينة السادات بمصر.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    نحن لا نكتفي فقط بتصنيع الأحجام القياسية، بل نعمل جنباً إلى جنب مع المهندسين ومديري الإنتاج في المصانع لتقديم الحل المناسب لوزن الرول ورطوبة التشغيل ومتطلبات كل خط إنتاج بدقة متناهية.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-amber-600 text-2xl">100%</h4>
+                        <p class="text-xs text-gray-600 font-bold">دقة أبعاد بالمليمتر</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                        <h4 class="font-bold text-amber-600 text-2xl">4 - 7%</h4>
+                        <p class="text-xs text-gray-600 font-bold">ضبط نسبة الرطوبة لمنع التفتت</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="production.jpg" alt="خطوط إنتاج الأمير باك" class="rounded-2xl shadow-lg border border-gray-200 w-full h-80 object-cover">
             </div>
         </div>
     </section>
 
     <!-- Interactive Specs Calculator -->
-    <section id="calculator" class="py-16 px-4 bg-white">
-        <div class="max-w-4xl mx-auto bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-10 shadow-sm">
+    <section id="calculator" class="py-16 px-4 bg-slate-100">
+        <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 md:p-10 shadow-sm">
             <div class="text-center mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">حاسبة المواصفات الفنية والقلوب الكرتونية</h2>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">حاسبة المواصفات الفنية للقلوب الكرتونية</h2>
                 <p class="text-gray-600 text-sm">حدد الأبعاد المطلوبة لطلب المواصفة المناسبة لخط إنتاجك مباشرة</p>
             </div>
             
@@ -84,43 +125,97 @@
 
             <div id="resultBox" class="hidden mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg text-center">
                 <p class="font-bold text-slate-900 mb-2" id="specSummary"></p>
-                <button onclick="sendToWhatsapp()" class="bg-green-600 text-white font-bold px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 mx-auto hover:bg-green-700">
-                    <i class="fab fa-whatsapp"></i> إرسال هذه المواصفة لإدارة المبيعات مباشرة
-                </button>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button onclick="sendToWhatsapp()" class="bg-green-600 text-white font-bold px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 hover:bg-green-700">
+                        <i class="fab fa-whatsapp"></i> إرسال عبر الواتساب
+                    </button>
+                    <a href="tel:01152818005" class="bg-slate-900 text-amber-400 font-bold px-4 py-2 rounded-lg text-sm flex items-center justify-center gap-2 hover:bg-slate-800">
+                        <i class="fas fa-phone"></i> اتصال تلفوني (01152818005)
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Products & Features Grid -->
-    <section id="products" class="py-16 px-4 bg-slate-100">
+    <!-- Products & Industries Gallery Grid (المنتجات والصناعات) -->
+    <section id="products" class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-black text-center text-slate-900 mb-12">لماذا نلبي احتياجات أكبر المصانع؟</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
-                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-microscope"></i></div>
-                    <h3 class="font-bold text-xl mb-2">ضبط نسبة الرطوبة (4-7%)</h3>
-                    <p class="text-gray-600 text-sm">نحافظ على نسبة رطوبة مثالية تمنع التواء المواسير أو تغير مقاساتها أثناء التخزين والتشغيل.</p>
+            <h2 class="text-3xl font-black text-center text-slate-900 mb-4">المنتجات والحلول لكل الصناعات</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">نوفر المواسير والقلوب الكرتونية المخصصة حسب طبيعة المنتج وخطوط الإنتاج لكل قطاع صناعي.</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-box-open"></i></div>
+                    <h3 class="font-bold text-lg mb-2">البلاستيك والاسترتش</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">قلوب كرتونية متينة جداً تتحمل السرعات العالية لمصانع الاسترتش فيلم وشرائح البلاستيك.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
-                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-ruler-combined"></i></div>
-                    <h3 class="font-bold text-xl mb-2">دقة أبعاد بالمليمتر</h3>
-                    <p class="text-gray-600 text-sm">التصنيع يتم وفق المقاس المحدد بالضبط متوافقاً مع السرعات العالية لخطوط إنتاجك.</p>
+                <div class="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-scroll"></i></div>
+                    <h3 class="font-bold text-lg mb-2">الورق والطباعة والتغليف</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">مواسير مخصصة لرولات الورق ومطابع التغليف مع ضمان استقامة السطح والقطر الدقيق.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
-                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold"><i class="fas fa-truck-loading"></i></div>
-                    <h3 class="font-bold text-xl mb-2">طاقة إنتاجية والتزام</h3>
-                    <p class="text-gray-600 text-sm">جاهزية توريد وتغطية للطلبات الكبيرة والإنتاج المستمر بدون أي تعطيل لمصنعك.</p>
+                <div class="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-tshirt"></i></div>
+                    <h3 class="font-bold text-lg mb-2">الغزل والنسيج والأقمشة</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">أنابيب كرتونية بأطوال وأقطار خاصة مصممة لتحمل أوزان رولات الأقمشة والغزل الثقيلة.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4 text-xl"><i class="fas fa-tape"></i></div>
+                    <h3 class="font-bold text-lg mb-2">الأشرطة اللاصقة Tapes</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">حلقات وقلوب كرتونية بدقة تقطيع متناهية مخصصة لمصانع السلوتيب والأشرطة اللاصقة.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-slate-900 text-white py-10 px-4">
-        <div class="max-w-7xl mx-auto text-center border-t border-slate-800 pt-8">
-            <h3 class="text-2xl font-bold text-amber-500 mb-2">الأمير باك للقلوب الكرتونية</h3>
-            <p class="text-gray-400 text-sm mb-4">مدينة السادات - المنطقة الصناعية - مصر</p>
-            <p class="text-xs text-gray-500">جميع الحقوق محفوظة © 2026 - الأمير باك</p>
+    <!-- ISO Certifications Section -->
+    <section id="iso" class="py-16 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-black text-slate-900 mb-4">شهادات الجودة والسلامة الدولية</h2>
+            <p class="text-gray-600 mb-12">نلتزم بأعلى معايير تصنيع القلوب الكرتونية لضمان أفضل أداء</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 border border-gray-200 rounded-xl bg-white shadow-sm">
+                    <img src="iso9001.jpg" alt="ISO 9001" class="h-40 mx-auto object-contain mb-4">
+                    <h3 class="font-bold text-lg text-slate-900">ISO 9001</h3>
+                    <p class="text-xs text-gray-500">نظام إدارة الجودة العالمي</p>
+                </div>
+                <div class="p-6 border border-gray-200 rounded-xl bg-white shadow-sm">
+                    <img src="iso14001.jpg" alt="ISO 14001" class="h-40 mx-auto object-contain mb-4">
+                    <h3 class="font-bold text-lg text-slate-900">ISO 14001</h3>
+                    <p class="text-xs text-gray-500">نظام الإدارة البيئية</p>
+                </div>
+                <div class="p-6 border border-gray-200 rounded-xl bg-white shadow-sm">
+                    <img src="iso45001.jpg" alt="ISO 45001" class="h-40 mx-auto object-contain mb-4">
+                    <h3 class="font-bold text-lg text-slate-900">ISO 45001</h3>
+                    <p class="text-xs text-gray-500">السلامة والصحة المهنية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="bg-slate-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 border-b border-slate-800 pb-8">
+            <div>
+                <h3 class="text-2xl font-bold text-amber-500 mb-4">الأمير باك AL-AMIR PACK</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">المصنع الرائد في مصر لتصنيع المواسير والقلوب الكرتونية بمختلف المقاسات والمواصفات للمصانع والشركات.</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-map-marker-alt text-amber-500 ml-2"></i> مدينة السادات - المنطقة الصناعية - مصر</p>
+                <p class="text-gray-300 text-sm mb-2"><i class="fas fa-phone text-amber-500 ml-2"></i> <a href="tel:01152818005" class="hover:underline">01152818005</a></p>
+                <p class="text-gray-300 text-sm"><i class="fas fa-envelope text-amber-500 ml-2"></i> <a href="mailto:alamirpack.sales66@gmail.com" class="hover:underline">alamirpack.sales66@gmail.com</a></p>
+            </div>
+            <div class="flex flex-col justify-center items-start md:items-end gap-3">
+                <a href="tel:01152818005" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg flex items-center gap-3 transition w-full sm:w-auto justify-center">
+                    <i class="fas fa-phone text-xl"></i> اتصل بالمبيعات (01152818005)
+                </a>
+                <a href="https://wa.me/201152818005" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-lg flex items-center gap-3 transition w-full sm:w-auto justify-center">
+                    <i class="fab fa-whatsapp text-xl"></i> تواصل عبر الواتساب
+                </a>
+                <a href="mailto:alamirpack.sales66@gmail.com" class="bg-slate-800 hover:bg-slate-700 text-gray-200 border border-slate-700 font-bold px-6 py-3 rounded-lg flex items-center gap-3 transition w-full sm:w-auto justify-center">
+                    <i class="fas fa-envelope text-amber-500 text-xl"></i> راسلنا عبر الإيميل
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto text-center text-xs text-gray-500">
+            جميع الحقوق محفوظة © 2026 - شركة الأمير باك
         </div>
     </footer>
 
@@ -143,7 +238,7 @@
         }
 
         function sendToWhatsapp() {
-            const url = https://wa.me/201224313333?text=${encodeURIComponent(currentSpec)};
+            const url = https://wa.me/201152818005?text=${encodeURIComponent(currentSpec)};
             window.open(url, '_blank');
         }
     </script>
