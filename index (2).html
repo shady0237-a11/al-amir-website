@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأمير باك | المصنع الرائد لإنتاج المواسير والقلوب الكرتونية الصناعية بمصر</title>
+<meta name="description" content="شركة الأمير باك - متخصصون في تصنيع القلوب والبوادن الكرتونية فائقة الصلابة لمصانع الاسترتش، التغليف، النسيج والورق بمدينة السادات.">
+<!-- Tailwind CSS & FontAwesome -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50: '#fffbeed',
+          400: '#fbbf24',
+          500: '#f59e0b',
+          600: '#d97706',
+          900: '#0f172a',
+          950: '#020617'
+        },
+        azure: {
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7'
+        }
+      }
+    }
+  }
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+body { font-family: 'Tajawal', sans-serif; overflow-x: hidden; }
+.glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(15, 23, 42, 0.08); transition: all .35s ease; box-shadow: 0 4px 20px -8px rgba(15,23,42,0.08); }
+.glass-card:hover { transform: translateY(-6px); border-color: rgba(217, 119, 6, 0.5); box-shadow: 0 20px 40px -15px rgba(217, 119, 6, 0.25); }
+.gradient-text { background: linear-gradient(135deg, #2563eb 0%, #f59e0b 50%, #b45309 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shine 6s linear infinite; }
+@keyframes shine { to { background-position: 200% center; } }
+.hero-bg {
+  background-image: linear-gradient(to left, rgba(255,255,255,0.65), rgba(255,255,255,0.93) 55%, rgba(255,255,255,1) 100%), url('hero-cores.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.blob { position: absolute; border-radius: 9999px; filter: blur(90px); opacity: 0.25; z-index: 0; animation: float 9s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-25px) scale(1.08); } }
+.glow-btn { position: relative; overflow: hidden; }
+.glow-btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent); transform: translateX(-100%); transition: transform .6s; }
+.glow-btn:hover::after { transform: translateX(100%); }
+.img-zoom { overflow: hidden; }
+.img-zoom img { transition: transform .6s ease; }
+.img-zoom:hover img { transform: scale(1.08); }
+.nav-link { position: relative; }
+.nav-link::after { content: ''; position: absolute; right: 0; bottom: -4px; width: 0; height: 2px; background: linear-gradient(90deg, #38bdf8, #f59e0b); transition: width .3s ease; }
+.nav-link:hover::after { width: 100%; }
+</style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-amber-600 selection:text-white">
+
+<!-- Top Bar -->
+<div class="bg-white border-b border-slate-200 text-xs py-2 px-4 text-slate-600">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <div class="flex items-center gap-6">
+      <span><i class="fas fa-map-marker-alt text-amber-600 ml-1"></i> مدينة السادات - المنطقة الصناعية</span>
+      <span class="hidden sm:inline"><i class="fas fa-microchip text-amber-600 ml-1"></i> دقة التصنيع: ±0.2 مم</span>
+      <span class="hidden md:inline"><i class="fas fa-droplet text-amber-600 ml-1"></i> نسبة الرطوبة: 4% - 7%</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="mailto:alamirpack.sales66@gmail.com" class="hover:text-amber-600 transition"><i class="fas fa-envelope ml-1"></i> alamirpack.sales66@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img translate="no" src="logo.png" alt="شعار الأمير باك" class="h-11 w-auto bg-white border border-slate-200 rounded-lg p-1">
+      <div>
+        <span translate="no" class="text-xl font-black tracking-wider block text-slate-900">الأمير باك</span>
+        <span class="text-[10px] text-blue-700 font-bold tracking-widest block -mt-1">AL-AMIR PACK CO.</span>
+      </div>
+    </div>
+    <div class="hidden lg:flex items-center gap-8 font-bold text-sm">
+      <a href="#about" class="nav-link text-slate-700 hover:text-amber-600 transition">من نحن</a>
+      <a href="#sectors" class="nav-link text-slate-700 hover:text-amber-600 transition">منتجاتنا</a>
+      <a translate="no" href="#advantages" class="nav-link text-slate-700 hover:text-amber-600 transition">لماذا الأمير باك؟</a>
+      <a href="#calculator" class="nav-link text-slate-700 hover:text-amber-600 transition">حاسبة المواصفات</a>
+      <a href="#contact" class="nav-link text-slate-700 hover:text-amber-600 transition">تواصل معنا</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:01152818005" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition flex items-center gap-2">
+        <i class="fas fa-phone text-amber-600"></i> <span class="hidden sm:inline">01152818005</span>
+      </a>
+      <a href="https://wa.me/201152818005" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white font-black px-5 py-2.5 rounded-xl text-xs sm:text-sm transition flex items-center gap-2 shadow-lg shadow-amber-500/30">
+        <i class="fab fa-whatsapp text-lg"></i> <span>طلب عينة مجانية</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-bg relative py-28 px-4 overflow-hidden">
+  <div class="blob w-72 h-72 bg-blue-400 top-10 right-10"></div>
+  <div class="blob w-96 h-96 bg-amber-400 bottom-0 left-0" style="animation-delay:2s"></div>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+    <div class="lg:col-span-7" data-aos="fade-up">
+      <div class="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 text-amber-700 px-4 py-2 rounded-full text-xs font-bold mb-6">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+        التصنيع الهندسي المعياري للقلوب والبوادن الكرتونية
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-normal text-slate-900 mb-6">
+        نصنع <span class="gradient-text">القلوب الكرتونية</span> التي تحمل ثقل صناعتك دون اهتزاز.
+      </h1>
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+        شركة <span translate="no">الأمير باك </span>تضع معياراً جديداً للصلابة ودقة الأقطار للمصانع والشركات. نضمن ثبات الرطوبة من (4% إلى 7%) لمقاومة الانضغاط الداخلي أثناء اللف السريع ومنع التفتت.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-12">
+        <a href="#calculator" class="glow-btn bg-gradient-to-l from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-black px-8 py-4 rounded-xl text-base transition shadow-xl shadow-amber-500/30 flex items-center gap-3">
+          <i class="fas fa-calculator"></i> احسب مواصفة الكور المناسب لرولك
+        </a>
+        <a href="https://wa.me/201152818005?text=برجاء%20ارسال%20كتالوج%20المنتجات%20والعينات" target="_blank" class="glow-btn bg-white hover:bg-slate-50 text-slate-800 border border-blue-300 shadow-sm font-bold px-8 py-4 rounded-xl text-base transition flex items-center gap-3">
+          <i class="fab fa-whatsapp text-green-500"></i> تواصل مع المبيعات
+        </a>
+      </div>
+      <!-- Live Metrics Bar -->
+      <div class="grid grid-cols-3 gap-4 border-t border-slate-200 pt-8">
+        <div>
+          <div class="text-2xl sm:text-3xl font-black text-amber-600">100%</div>
+          <div class="text-xs text-slate-500 font-medium">دقة قطع بالمليمتر</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-black text-amber-600">4-7%</div>
+          <div class="text-xs text-slate-500 font-medium">تحكم صارم بالرطوبة</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-black text-amber-600">24h</div>
+          <div class="text-xs text-slate-500 font-medium">سرعة تجهيز العينات</div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative" data-aos="zoom-in">
+      <div class="glass-card p-6 rounded-3xl relative z-10 border border-slate-200 shadow-2xl">
+        <div class="flex items-center justify-between mb-4 border-b border-slate-200 pb-3">
+          <span class="text-xs font-bold text-slate-500">بطاقة المواصفات الفنية القياسية</span>
+          <span class="text-xs bg-amber-100 text-amber-700 px-2.5 py-1 rounded font-mono">SPEC-STD-2026</span>
+        </div>
+        <div class="space-y-4 text-sm">
+          <div class="flex justify-between items-center py-2 border-b border-slate-200">
+            <span class="text-slate-500">القطر الداخلي (ID):</span>
+            <span class="font-bold text-slate-900">من 25 مم إلى 450 مم</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-200">
+            <span class="text-slate-500">سمك الجدار (Wall):</span>
+            <span class="font-bold text-slate-900">من 1.5 مم إلى 20 مم</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-200">
+            <span class="text-slate-500">مقاومة الانضغاط:</span>
+            <span class="font-bold text-emerald-600">فائقة High Crush Resistance</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-slate-200">
+            <span class="text-slate-500">نوع الغراء المستعمل:</span>
+            <span class="font-bold text-slate-900">مقاوم للرطوبة ودرجات الحرارة</span>
+          </div>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600">
+            <i class="fas fa-shield-alt text-amber-600 ml-1"></i> مصممة لتتحمل السرعات العالية جداً في ماكينات السلايتر واللف دون تشوه القطر الداخلي.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-4 bg-white border-t border-slate-100">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-left">
+      <img translate="no" src="about-office.jpg" alt="منتجات الأمير باك - كور كرتون صناعية" class="rounded-3xl border border-slate-200 shadow-xl w-full h-auto">
+    </div>
+    <div data-aos="fade-right">
+      <span class="bg-amber-50 text-amber-700 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">من نحن</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-6">خبرة متراكمة في صناعة الكور الورقي والصناعي</h2>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+        شركة <span translate="no">الأمير باك </span>لصناعة الورق والكرتون المضلع - متخصصون في تصنيع المواسير والقلوب الكرتونية الصناعية بمختلف المقاسات والمواصفات، بالاعتماد على خامات مختارة بعناية وتقنيات تصنيع حديثة.
+      </p>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
+        لا يقتصر دورنا على تنفيذ المقاس المطلوب فقط، بل نساعد عملاءنا على الوصول إلى المواصفة الأنسب لطبيعة الرول، ووزنه، واستخدامه، ومتطلبات خط الإنتاج - من مدينة السادات، المنطقة الصناعية، المنوفية.
+      </p>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="glass-card p-4 rounded-xl">
+          <div class="text-2xl font-black text-amber-600 mb-1">2015</div>
+          <div class="text-xs text-slate-500">بداية النشاط في الصناعة</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Advantages / Quality Precision Section -->
+<section id="advantages" class="py-20 px-4 bg-slate-50 border-y border-slate-100">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span translate="no" class="bg-amber-50 text-amber-700 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">لماذا الأمير باك؟</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-4">جودة يمكن إثباتها بالصورة قبل الكلمة</h2>
+      <p class="text-slate-600 text-sm sm:text-base">كل تشغيلة إنتاج بتتابع بدقة من التصنيع للتغليف، وده بنقدر نوريه ملموس مش بس نقوله.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden" data-aos="fade-up">
+        <img src="precision-detail.jpg" alt="ترقيم وتتبع دفعات الإنتاج" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2"><i class="fas fa-fingerprint text-amber-600 ml-1"></i> ترقيم وتتبع كل دفعة إنتاج</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">كل ماسورة بتحمل كود تصنيع فريد (Batch Code) مطبوع بدقة على السطح الداخلي، بيسمح بتتبع كامل لتاريخ التشغيلة ومطابقتها للمواصفة المطلوبة قبل التوريد.</p>
+        </div>
+      </div>
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <img src="quality-measure.jpg" alt="قياسات هندسية دقيقة" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2"><i class="fas fa-ruler-combined text-amber-600 ml-1"></i> فحص هندسي بأدوات قياس معتمدة</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">نراجع القطر الداخلي والسمك والطول بأدوات قياس هندسية دقيقة (فرجار وشريط قياس معايَر) لكل تشغيلة، لضمان توافق 100% مع خط إنتاج العميل قبل الشحن.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sector Solutions (8 Sectors vs MAMPACK) -->
+<section id="sectors" class="py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-4">حلول هندسية متخصصة لكل قطاع صناعي</h2>
+      <p class="text-slate-600 text-sm sm:text-base">نصنع القلوب الكرتونية بناءً على متطلبات الماكينة ونوعية خامة الرول الملفوف عليها.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden group" data-aos="fade-up">
+        <img src="food-sector.jpg" alt="كور لخطوط التعبئة الغذائية" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2">الأغذية والاسترتش الغذائي</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">قلوب مقاومة للرطوبة مصممة لتتحمل الحركة السريعة في خطوط فرز وتعبئة الفاكهة والاسترتش الغذائي دون التأثير على سلامة المنتج.</p>
+        </div>
+      </div>
+
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="50">
+        <img src="raw-material.jpg" alt="طبقات الورق الخام قبل مرحلة اللف الصناعي" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2">الخامة الأولية وتشكيل الطبقات</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">نعتمد على طبقات ورق كرافت مختارة بعناية ومطابقة للمواصفة، تُلف بدقة هندسية عالية لضمان تجانس السُمك وقوة التماسك بين الطبقات قبل مرحلة التصلب النهائي.</p>
+        </div>
+      </div>
+
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+        <img src="textile-sector.jpg" alt="بوادن كرتون لرولات الغزل والنسيج والأقمشة" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2">الغزل والنسيج والأقمشة</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">بوادن كرتون تتحمل الأوزان الضخمة لرولات القماش والستائر والسجاد دون تهشم الأطراف.</p>
+        </div>
+      </div>
+
+      <div class="glass-card img-zoom rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="150">
+        <img src="tapes-sector.jpg" alt="دقة تقطيع مواسير الأشرطة اللاصقة" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-lg text-slate-900 mb-2">الأشرطة اللاصقة Tapes</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">حلقات كرتون صغيرة بدقة تقطيع متناهية وحواف ناعمة جداً لخطوط تقطيع السلوتيب.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Technical Specification Calculator -->
+<section id="calculator" class="py-20 px-4 bg-slate-50">
+  <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl">
+    <div class="text-center mb-10">
+      <span class="bg-amber-50 text-amber-700 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">حاسبة المواصفات الصناعية</span>
+      <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-3">احسب مواصفة القطور وطلب التسعير الفوري</h2>
+      <p class="text-slate-600 text-xs sm:text-sm mt-2">أدخل أبعاد المنتج المطلوب وسيقوم النظام بتحديد المواصفة المناسبة وإرسالها للمبيعات</p>
+    </div>
+    <form id="calcForm" onsubmit="calculateSpecs(event)" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block text-xs font-bold text-slate-600 mb-2">القطر الداخلي المطلوب (Inner Diameter - mm)</label>
+        <input type="number" id="inDia" placeholder="مثال: 76 مم (3 بوصة)" required class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3.5 text-slate-900 outline-none focus:border-amber-500 text-sm">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-slate-600 mb-2">سمك الجدار (Wall Thickness - mm)</label>
+        <input type="number" id="wThick" placeholder="مثال: 8 مم" required class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3.5 text-slate-900 outline-none focus:border-amber-500 text-sm">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-slate-600 mb-2">الطول الإجمالي (Length - mm)</label>
+        <input type="number" id="cLength" placeholder="مثال: 500 مم" required class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3.5 text-slate-900 outline-none focus:border-amber-500 text-sm">
+      </div>
+      <div>
+        <label class="block text-xs font-bold text-slate-600 mb-2">القطاع الصناعي المستهدف</label>
+        <select id="secType" class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3.5 text-slate-900 outline-none focus:border-amber-500 text-sm">
+          <option value="استرتش فيلم وبلاستيك">بلاستيك واسترتش فيلم</option>
+          <option value="غزل ونسيج وأقمشة">غزل ونسيج وأقمشة</option>
+          <option value="ورق وطباعة وتغليف">ورق وطباعة ورول</option>
+          <option value="أشرطة لاصقة">أشرطة لاصقة وتطبيقات خاصة</option>
+        </select>
+      </div>
+      <div class="md:col-span-2">
+        <button type="submit" class="glow-btn w-full bg-gradient-to-l from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-black py-4 rounded-xl text-base transition shadow-lg shadow-amber-500/30">
+          توليد المواصفة وحساب القطر الخارجي
+        </button>
+      </div>
+    </form>
+    <div id="calcResult" class="hidden mt-8 p-6 bg-amber-50 border border-amber-300 rounded-2xl text-center">
+      <h4 class="text-amber-700 font-bold mb-2 text-base">تم تجهيز المواصفة بنجاح!</h4>
+      <p id="resultText" class="text-slate-600 text-sm mb-6 font-mono"></p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="sendCalcWhatsapp()" class="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-xl text-sm flex items-center gap-2">
+          <i class="fab fa-whatsapp text-lg"></i> إرسال للمبيعات فوراً (01152818005)
+        </button>
+        <a href="mailto:alamirpack.sales66@gmail.com" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-bold px-6 py-3 rounded-xl text-sm flex items-center gap-2">
+          <i class="fas fa-envelope text-amber-600"></i> طلب عرض سعر بريدي
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table (Why Amir Pack is Better) -->
+<section id="comparison" class="py-20 px-4 bg-white border-t border-slate-100">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-black text-slate-900 mb-3">مقارنة المعايير الفنية والتصنيع</h2>
+      <p class="text-slate-600 text-sm">شاهد كيف تتفوق معايير "<span translate="no">الأمير باك</span>" في حماية خطوط إنتاجك</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-right text-slate-600">
+        <thead class="bg-slate-50 text-amber-700 text-xs uppercase border-b border-slate-200">
+          <tr>
+            <th class="py-4 px-6">المعيار الفني</th>
+          <th class="py-4 px-6 bg-amber-50 text-slate-900">مصنع <span translate="no">الأمير باك</span> (AL-AMIR PACK)</th>
+            <th class="py-4 px-6 opacity-60">المصانع التقليدية والمنافسون</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-200">
+          <tr>
+            <td class="py-4 px-6 font-bold text-slate-900">نسبة ضبط الرطوبة</td>
+            <td class="py-4 px-6 bg-amber-50 text-emerald-600 font-bold">4% - 7% (معالجة بالأفران الحرارية)</td>
+            <td class="py-4 px-6 opacity-60">متغيرة (تؤدي للانحناء والتفتت)</td>
+          </tr>
+          <tr>
+            <td class="py-4 px-6 font-bold text-slate-900">دقة القطع والأقطار</td>
+            <td class="py-4 px-6 bg-amber-50 text-emerald-600 font-bold">±0.2 مم بالليزر والماكينات الحديثة</td>
+            <td class="py-4 px-6 opacity-60">تفاوت واسع يصل إلى ±1.5 مم</td>
+          </tr>
+          <tr>
+            <td class="py-4 px-6 font-bold text-slate-900">مقاومة الانضغاط (Flat Crush)</td>
+            <td class="py-4 px-6 bg-amber-50 text-emerald-600 font-bold">اختبارات إجهاد كاملة لكل تشغيلة</td>
+            <td class="py-4 px-6 opacity-60">بدون اختبارات معملية موثقة</td>
+          </tr>
+          <tr>
+            <td class="py-4 px-6 font-bold text-slate-900">التوريد والسرعة</td>
+            <td class="py-4 px-6 bg-amber-50 text-emerald-600 font-bold">توريد مباشر من مدينة السادات</td>
+            <td class="py-4 px-6 opacity-60">مواعيد تسليم غير منتظمة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Footer / Contact -->
+<footer id="contact" class="bg-slate-950 border-t border-slate-800 py-12 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <img translate="no" src="logo.png" alt="شعار الأمير باك" class="h-9 w-auto bg-white rounded p-1">
+        <span translate="no" class="text-xl font-black text-white">الأمير باك</span>
+      </div>
+      <p class="text-slate-400 text-xs leading-relaxed mb-4">
+        شركة متخصصة في تصنيع المواسير والقلوب الكرتونية الصناعية عالية المقاومة والدقة لمختلف القطاعات الصناعية بمصر والشرق الأوسط.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 text-sm">بيانات التواصل المباشر</h4>
+      <ul class="space-y-2 text-xs text-slate-400">
+        <li><i class="fas fa-phone text-amber-500 ml-2"></i> الهاتف الرئيسي: <a href="tel:01152818005" class="hover:text-white">01152818005</a></li>
+        <li><i class="fab fa-whatsapp text-emerald-400 ml-2"></i> الواتساب التجاري: <a href="https://wa.me/201152818005" class="hover:text-white">201152818005+</a></li>
+        <li><i class="fas fa-envelope text-amber-500 ml-2"></i> مبيعات المصنع: <a href="mailto:alamirpack.sales66@gmail.com" class="hover:text-white">alamirpack.sales66@gmail.com</a></li>
+        <li><i class="fas fa-building text-amber-500 ml-2"></i> الموقع: مدينة السادات - مصر</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 text-sm">طلب عينات واستشارات</h4>
+      <p class="text-slate-400 text-xs mb-4">هل تحتاج مواصفة مخصصة لخط إنتاجك؟ فريقنا المهندسين جاهز لمعاينة الماكينات وتقديم العينة الفنية.</p>
+      <a href="https://wa.me/201152818005?text=احتاج%20استشارة%20فنية%20لمواصفات%20الكور" target="_blank" class="glow-btn bg-gradient-to-l from-amber-500 to-amber-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs inline-block hover:from-amber-400 hover:to-amber-300 transition">
+        <i class="fab fa-whatsapp ml-1"></i> تواصل مع المهندس المختص
+      </a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto border-t border-slate-900 pt-6 text-center text-xs text-slate-600">
+    جميع الحقوق محفوظة © 2026 - شركة <span translate="no">الأمير باك</span> إنتاج القلوب الكرتونية AL-AMIR PACK
+  </div> 
+</footer>
+
+<!-- Interactive Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800, once: true });
+
+let calculatedMessage = "";
+function calculateSpecs(e) {
+  e.preventDefault();
+  const id = parseFloat(document.getElementById('inDia').value);
+  const wall = parseFloat(document.getElementById('wThick').value);
+  const len = parseFloat(document.getElementById('cLength').value);
+  const sec = document.getElementById('secType').value;
+  const od = id + (wall * 2);
+
+  calculatedMessage = `طلب تسعير مواسير كرتون - شركة الأمير باك:\n- القطر الداخلي: ${id} مم\n- سمك الجدار: ${wall} مم\n- القطر الخارجي المحسوب: ${od} مم\n- الطول: ${len} مم\n- القطاع: ${sec}`;
+
+  document.getElementById('resultText').innerText = `المواصفة: قطر داخلي ${id}مم | سمك ${wall}مم (قطر خارجي ${od}مم) | طول ${len}مم | قطاع: ${sec}`;
+  document.getElementById('calcResult').classList.remove('hidden');
+}
+
+function sendCalcWhatsapp() {
+  const url = `https://wa.me/201152818005?text=${encodeURIComponent(calculatedMessage)}`;
+  window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
